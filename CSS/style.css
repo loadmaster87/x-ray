@@ -1,0 +1,187 @@
+:root {
+  --primary-color: rgb(255, 195, 0);
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Lobster", cursive; */
+  /* font-family: "Pacifico", cursive; */
+  /* font-family: "Yanone Kaffeesatz", sans-serif; */
+  /* font-family: "Amatic SC", cursive; */
+  font-family: "Caveat", cursive;
+  /* font-family: "Russo One", sans-serif; */
+  /* font-family: "Marck Script", cursive; */
+  /* font-family: "Seymour One", sans-serif; */
+  line-height: 1.6;
+  background: #444;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  top: 0;
+  background: var(--primary-color);
+  height: 90px;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 1rem 0;
+}
+
+#navbar .logo {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar .logo img {
+  height: 70px;
+  margin-top: -5px;
+  margin-left: 2rem;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 1rem 0.3rem 1rem;
+  margin: 0 0.25rem;
+  transition: ease-in 0.7s;
+}
+
+#navbar ul li a:hover {
+  color: #3b5998;
+  border-bottom: 2px #444 solid;
+}
+
+#navbar .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+}
+
+#navbar .social > *:last-child {
+  color: #ff0000;
+  padding-left: 0.5rem;
+  padding-right: 0.51rem;
+}
+
+#navbar .social > *:first-child {
+  color: #3b5998;
+}
+
+/* Showvase */
+#showcase {
+  background: url(/img/showcase.JPG) no-repeat center center/cover;
+  height: 88vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+#showcase h1 {
+  margin-top: -1rem;
+  color: #fff;
+  font-size: 3rem;
+}
+
+/* About */
+#about {
+  background: #444;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+#about p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: justify;
+  font-size: 17px;
+}
+#about a {
+  color: var(--primary-color);
+}
+
+#about br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 30%;
+}
+
+/* Video */
+#video {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#video .video {
+  display: grid;
+  padding: 0 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Gallery */
+#gallery {
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#gallery .gallery img {
+  width: 400px;
+}
+
+#gallery .gallery {
+  display: grid;
+  padding: 0 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 1rem;
+  display: flex;
+  height: 120px;
+  background: var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
