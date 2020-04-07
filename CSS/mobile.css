@@ -8,7 +8,9 @@
 /* #navbar .logo {
   display: none;
 } */
-
+/* #navbar {
+  display: sticky;
+} */
 #navbar ul li a {
   padding: 0;
 }
@@ -57,20 +59,33 @@
   #navbar .social a {
     font-size: 0.75rem;
   }
+
+  #about {
+    padding-top: 40px;
+  }
+
   #showcase {
+    height: 50vh;
     text-align: center;
     font-size: 15px;
+    margin-bottom: 11rem;
   }
+
+  #showcase h1 {
+    padding: 1rem 0;
+    font-size: 30px;
+  }
+
   #video .video {
     display: grid;
-    padding: 0 2rem;
+    padding: 0 -1rem;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
   }
 
   #gallery .gallery {
     display: grid;
-    padding: 0 2rem;
+    padding: 0;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
   }
@@ -97,6 +112,16 @@
 
   #navbar .social {
     margin-right: -1rem;
+  }
+}
+
+@media (max-height: 420px) {
+  #showcase {
+    display: none;
+  }
+
+  #about {
+    padding-top: 0;
   }
 }
 
