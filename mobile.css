@@ -1,0 +1,152 @@
+#navbar ul li a {
+  padding: 0;
+}
+
+#video .video {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#gallery .gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    display: flex;
+    height: 190px;
+    flex-direction: row;
+  }
+
+  #navbar .logo {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.2rem;
+    padding-left: 1rem;
+  }
+
+  #navbar ul li a {
+    font-size: 1.3rem;
+  }
+
+  #navbar .social {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #navbar .social > *:last-child {
+    padding: 0;
+    padding-right: 2rem;
+  }
+
+  #navbar .social a {
+    font-size: 0.75rem;
+  }
+
+  #about {
+    padding-top: 40px;
+    margin-bottom: -3rem;
+  }
+
+  #showcase {
+    height: 50vh;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 11rem;
+  }
+
+  #showcase h1 {
+    padding: 1rem 0;
+    font-size: 30px;
+  }
+
+  #video .video {
+    display: grid;
+    padding: 0 -1rem;
+    margin-top: 3.5rem;
+    margin-bottom: -3rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  #gallery .gallery {
+    display: grid;
+    margin-top: 2.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #navbar {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+  }
+
+  #navbar .logo {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  #navbar ul {
+    margin-right: 1rem;
+  }
+
+  #navbar ul li a {
+    font-size: 1.1rem;
+  }
+
+  #navbar .social {
+    margin-right: -1rem;
+  }
+}
+
+/* Landscape */
+@media (max-height: 420px) {
+  #navbar {
+    display: flex;
+    height: 55px;
+    flex-direction: row;
+  }
+
+  #navbar .logo {
+    display: block;
+    margin-top: -10px;
+    margin-left: -12px;
+  }
+
+  #navbar .logo img {
+    height: 53px;
+  }
+
+  #navbar .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  #navbar .social > *:last-child {
+    padding-left: 0.3rem;
+  }
+
+  #navbar ul {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.2rem;
+    margin-right: 1rem;
+  }
+  #navbar ul > *:first-child {
+    display: none;
+  }
+
+  #showcase {
+    display: none;
+  }
+
+  #about {
+    padding-top: 0;
+  }
+}
