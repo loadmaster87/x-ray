@@ -105,10 +105,11 @@
   }
 }
 
+/* Landscape */
 @media (max-height: 420px) {
   #navbar {
     display: flex;
-    height: 100px;
+    height: 55px;
     flex-direction: row;
   }
 
@@ -117,11 +118,23 @@
     margin: 0;
   }
 
+  #navbar .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  #navbar .social > *:last-child {
+    padding-left: 0.3rem;
+  }
+
   #navbar ul {
     flex-direction: row;
     align-items: center;
     margin-top: 0.2rem;
-    margin-left: -4rem;
+    margin-right: 1rem;
+  }
+  #navbar ul > *:first-child {
+    display: none;
   }
 
   #showcase {
