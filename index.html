@@ -23,12 +23,12 @@
         
         <!-- <h1 class="logo-text">X-R@Y</h1> -->
       </div>
-      <ul>
-        <li><a href="#home" class="btn">Начало</a></li>
-        <li><a href="#about" class="btn"> За групата</a></li>
-        <li><a href="#video" class="btn">Видео</a></li>
-        <li><a href="#gallery" class="btn">Галерия</a></li>
-        <li><a href="#contacts" class="btn">Контакти</a></li>
+      <ul class="py">
+        <li><a href="#home" class="btn active">Начало</a></li>
+        <li><a href="#about" class="btn active">За групата</a></li>
+        <li><a href="#video" class="btn active">Видео</a></li>
+        <li><a href="#gallery" class="btn active">Галерия</a></li>
+        <li><a href="#contacts" class="btn active">Контакти</a></li>
       </ul>
       <div class="social">
         <a href="https://www.facebook.com/xray.bg/?ref=aymt_homepage_panel&eid=ARCEknHfJi3FzoToBiTTGQ5OQnZ3DH_9wuBn8Sw7tChGYR80AV4Ys7AZsYAzszUdV9V53XCL0VrQokJg" target="_blank"
@@ -50,6 +50,8 @@
     <!-- About -->
     <section id="about">
       <div class="about-text">
+        <!-- Първа секция -->
+        <div class="first">
       <p> Група X-R@Y е създадена в края на 2006 година от Веселин Кирев – вокали, Николай Николов – гъдулка и Николай Димитров – китара и   вокали. Тримата се познават от преди създаването на групата като свирят заедно в други проекти, вокалистът и гъдуларят свирят на гъдулка в ансамбъл „Изворче” при Национален Дворец на Децата, а пък двамата съименници са били в началното училище. <br></br>
         „Рентгеновите лъчи имат проникват и до най-дълбоките кътчета на материята. Искаме това, музиката, която създаваме да има същата способност” – си казват момчетата и се наричат X-R@Y.
         <br></br>
@@ -62,8 +64,11 @@
       От есента на 2009-та година X-R@Y решава да промени напълно своето звучене, като се ориентира изцяло към акустично изпълнената музика. До тогава музикантите създават, както електронни, така и акустични песни.
       <br></br>
       През 2010г. X-R@Y участва в шоу за таланти <a href="https://www.youtube.com/watch?v=yjqAaqN4Xlw " target="_blank">ЛИНК </a> и се превръща в голямата сензация в първия сезон на предаването <a href="https://dariknews.bg/novini/liubopitno/dvojnik-na-ronaldinxo-i-60-godishna-akrobatka-pretendenti-za-talanti-496330" target="_blank">ЛИНК </a>   През лятото на същата година музикантите организират фестивала „Витоша за всички” заедно с фондация I can too, WWF, певицата Тони и др. <a href="http://www.wwf.bg/?194295/wwf-vitosha-festival-aleko%20http://e-comedia.com/?p=5388
-      " target="_blank">ЛИНК </a> <br></br>
-      През 2011 г. групата е сред участниците на честването на 20 г. студентски съвет на УНСС, заедно с Графа, БТР и др . <a href="http://men.hotnews.bg/n/20-godini-studentski-suvet-pri-unss.12137.html
+      " target="_blank">ЛИНК </a> <br></br></p>
+       </div>
+      <!-- Втора секция -->
+      <div class="second">
+        <p> През 2011 г. групата е сред участниците на честването на 20 г. студентски съвет на УНСС, заедно с Графа, БТР и др . <a href="http://men.hotnews.bg/n/20-godini-studentski-suvet-pri-unss.12137.html
       " target="_blank">ЛИНК </a>   Момчетата, заедно с Рут Колева и др. изпълнители са и един от “живите” билбордове на откриването на 6-то издание на фестивала SEE ME през октомври същата година. <a href="http://www.avtora.com/news/2011/10/03/bilbordove_v_sofiya_ojivyaha_za_seeme_6_s_rut_koleva_toma_toni_phuture_shock_i_x_ray_video
       " target="_blank">ЛИНК </a> 
       <br></br>
@@ -84,7 +89,9 @@
       Според някои критици толкова разнообразен албум не се е появявал на българския пазар в последните 10 години.
       <br></br>
       През февруари 2020 г. сингълът и видеоклип на песента от албума „Децата на града“ достига второто място в класацията за независима българска музика Ново 10+2 на БНТ2. <a href="https://www.bnt.bg/bg/a/   tino-i-neli-gergova-nels-v-novo-102" target="_blank">ЛИНК </a>
-    </p></div>
+      </p>
+      </div>
+    </div>
   </section>
 
   <!-- Video -->
@@ -137,5 +144,21 @@
     }
   });
   </script>
+  <script>
+    $('#navbar a').click(function() {
+	  $('#navbar .active').removeClass('active');
+	  $(this).addClass('active');
+    });
+  </script>
+<!-- Поставя се във съответния елемент "onclick="submitButtonStyle(this)" type="submit" class="stylebutton" 
+      Това е скрипта, който стои в края на *.html
+<script>
+    function submitButtonStyle(_this) {
+  _this.style.backgroundColor = "#f99500";
+}
+  </script>
+
+-->
+
   </body>
 </html>
