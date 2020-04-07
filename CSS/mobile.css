@@ -9,7 +9,15 @@
   display: none;
 }
 
-@media (max-width: 500px) {
+#video .video {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#gallery .gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 800px) {
   #navbar {
     display: flex;
     height: 120px;
