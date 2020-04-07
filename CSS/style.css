@@ -71,14 +71,15 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: #111;
   padding: 1rem 1rem 0.3rem 1rem;
   margin: 0 0.25rem;
   transition: ease-in 0.7s;
 }
 
-#navbar ul li a:hover {
-  color: #3b5998;
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  color: #fff;
   border-bottom: 2px #444 solid;
 }
 
@@ -121,13 +122,13 @@ p {
 #about {
   background: #444;
   color: #fff;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 #about p {
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: justify;
-  font-size: 17px;
+  font-size: 19px;
 }
 #about a {
   color: var(--primary-color);
@@ -138,6 +139,12 @@ p {
   margin: 2em;
   display: block;
   font-size: 30%;
+}
+
+#about .about-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
 
 /* Video */
