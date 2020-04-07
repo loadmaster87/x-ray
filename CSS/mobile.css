@@ -1,12 +1,16 @@
-#navbar {
+/* #navbar {
   display: block;
   height: 100px;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-#navbar .logo {
+/* #navbar .logo {
   display: none;
+} */
+
+#navbar ul li a {
+  padding: 0;
 }
 
 #video .video {
@@ -20,18 +24,24 @@
 @media (max-width: 800px) {
   #navbar {
     display: flex;
-    height: 120px;
+    height: 190px;
     flex-direction: row;
+  }
+
+  #navbar .logo {
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
 
   #navbar ul {
     flex-direction: column;
     align-items: center;
+    margin-top: 0.2rem;
     padding-left: 1rem;
   }
 
   #navbar ul li a {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   #navbar .social {
@@ -63,6 +73,30 @@
     padding: 0 2rem;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #navbar {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+  }
+
+  #navbar .logo {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  #navbar ul {
+    margin-right: 1rem;
+  }
+
+  #navbar ul li a {
+    font-size: 1.1rem;
+  }
+
+  #navbar .social {
+    margin-right: -1rem;
   }
 }
 
