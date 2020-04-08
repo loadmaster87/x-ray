@@ -1,5 +1,6 @@
+/* Малък екран или таблет */
 #navbar ul li a {
-  padding: 0;
+  padding: 0 0.5rem;
 }
 
 #video .video {
@@ -9,8 +10,8 @@
 #gallery .gallery {
   grid-template-columns: repeat(2, 1fr);
 }
-
-@media (max-width: 700px) {
+/* Стандартни телефони */
+@media (max-width: 780px) {
   #navbar {
     display: flex;
     height: 190px;
@@ -53,6 +54,12 @@
     margin-bottom: -3rem;
   }
 
+  #about .about-text {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
   #showcase {
     height: 50vh;
     text-align: center;
@@ -81,8 +88,8 @@
     grid-gap: 1rem;
   }
 }
-
-@media (max-width: 550px) {
+/* Телефони с малка резолюция */
+@media (max-width: 500px) {
   #navbar {
     display: flex;
     height: 150px;
@@ -129,6 +136,7 @@
     font-size: 1.2rem;
   }
   #navbar .social {
+    /* margin-right: -2.5rem; */
     display: flex;
     justify-content: center;
   }

@@ -120,9 +120,11 @@ p {
 
 /* About */
 #about {
+  display: flex;
   background: #444;
   color: #fff;
   padding: 0 2rem;
+  justify-content: center;
 }
 
 #about p {
@@ -143,7 +145,7 @@ p {
 
 #about .about-text {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 370px);
   grid-gap: 2rem;
 }
 
@@ -186,9 +188,19 @@ p {
 footer {
   margin-top: 1rem;
   display: flex;
+  justify-content: space-around;
   height: 120px;
+  text-align: end;
   background: var(--primary-color);
   align-items: center;
   justify-content: center;
   font-size: 2rem;
 }
+
+/* footer .copy {
+  padding-left: 20rem;
+}
+
+footer .contact {
+  padding-left: 40rem;
+} */
